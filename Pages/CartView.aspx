@@ -23,6 +23,11 @@
                             <td><%# Item.StoreItem.Price.ToString("c")%></td>
                             <td><%# ((Item.Quantity * 
                                 Item.StoreItem.Price).ToString("c"))%></td>
+                            <td>
+                                <button type="submit" class="actionButtons" name="remove"
+                                    value="<%#Item.Game.GameId %>">
+                                    Удалить</button>
+                            </td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
