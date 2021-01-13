@@ -1,6 +1,6 @@
 using System;
 using System.Web.SessionState;
-using GameStore.Models;
+using Natural_Store.Models;
 
 namespace Natural_Store.Pages.Helpers
 {
