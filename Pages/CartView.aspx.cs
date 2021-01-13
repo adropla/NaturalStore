@@ -9,7 +9,20 @@ namespace Natural_Store.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        	
+        	if (IsPostBack)
+            {
+                Repository repository = new Repository();
+                int gameId;
+                if (int.TryParse(Request.Form["remove"], out gameId))
+                {
+                    Game gameToRemove = repository.Games
+                        .Where(g => g.GameId == gameId).FirstOrDefault();
+                    if (gameToRemove != null)
+                    {
+                        SessionHelper.GetCart(Session).RemoveLine(gameToRemove);
+                    }
+                }
+            }
         }
 
         public IEnumerable<CartLine> GetCartLines()
