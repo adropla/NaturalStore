@@ -4,21 +4,19 @@
 
 <asp:Content ContentPlaceHolderID="bodyContent" runat="server">
     <div id="content">
-        <%
-            foreach (Natural_Store.Models.StoreItem storeItem in GetStoreItems())
-            {
-                Response.Write(String.Format(@"
-                        <div class='item'>
-                            <h3>{0}</h3>
-                            {1}
-                            <h4>{2:c}</h4>
-                            <button name='add' type='submit' value='{3}'>
-                                Добавить в корзину
-                            </button>
-                        </div>",
-                    storeItem.Name, storeItem.Description, storeItem.Price, storeItem.StoreItemId));
-            }
-        %>
+        <asp:Repeater ItemType="Natural_Store.Models.StoreItem"
+            SelectMethod="GetStoreItems" runat="server">
+            <ItemTemplate>
+                <div class="item">
+                    <h3><%# Item.Name %></h3>
+                    <%# Item.Description %>
+                    <h4><%# Item.Price.ToString("c") %></h4>
+                    <button name="add" type="submit" value="<%# Item.StoreItemId %>">
+                        Добавить в корзину
+                    </button>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
     <div class="pager">
         <%
