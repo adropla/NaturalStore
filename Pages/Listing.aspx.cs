@@ -19,7 +19,7 @@ namespace Natural_Store.Pages
             get
             {
                 int page;
-                page = int.TryParse(Request.QueryString["page"], out page) ? page : 1;
+                page = GetPageFromRequest();
                 return page > MaxPage ? MaxPage : page;
             }
         }
@@ -27,7 +27,8 @@ namespace Natural_Store.Pages
         {
             get
             {
-                return (int)Math.Ceiling((decimal)repository.StoreItems.Count() / pageSize);
+                int prodCount = FilterGames().Count();
+                return (int)Math.Ceiling((decimal)prodCount / pageSize);
             }
         }
         private int GetPageFromRequest()
@@ -44,6 +45,16 @@ namespace Natural_Store.Pages
                 .OrderBy(g => g.Id)
                 .Skip((CurrentPage - 1) * pageSize)
                 .Take(pageSize);
+        }
+
+        // вспомогательный метод для фильтрации игр по категориям
+        private IEnumerable<StoreItem> FilterGames()
+        {
+            IEnumerable<StoreItem> games = repository.StoreItems;
+            string currentCategory = (string)RouteData.Values["category"] ??
+                Request.QueryString["category"];
+            return currentCategory == null ? games :
+                games.Where(p => p.Category == currentCategory);
         }
 
         protected void Page_Load(object sender, EventArgs e)
