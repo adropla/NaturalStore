@@ -29,7 +29,7 @@ namespace Natural_Store.Models
 
         public void RemoveLine(StoreItem storeItem)
         {
-            lineCollection.RemoveAll(l => l.StoreItem.StoreItemId == storeItem.storeItemd);
+            lineCollection.RemoveAll(l => l.StoreItem.StoreItemId == storeItem.storeItem);
         }
 
         public decimal ComputeTotalValue()
