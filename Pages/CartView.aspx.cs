@@ -12,14 +12,14 @@ namespace Natural_Store.Pages
         	if (IsPostBack)
             {
                 Repository repository = new Repository();
-                int gameId;
-                if (int.TryParse(Request.Form["remove"], out gameId))
+                int storeItemId;
+                if (int.TryParse(Request.Form["remove"], out storeItemId))
                 {
-                    Game gameToRemove = repository.Games
-                        .Where(g => g.GameId == gameId).FirstOrDefault();
-                    if (gameToRemove != null)
+                    StoreItem storeItemToRemove = repository.StoreItem
+                        .Where(g => g.StoreItemId == storeItemId).FirstOrDefault();
+                    if (storeItemToRemove != null)
                     {
-                        SessionHelper.GetCart(Session).RemoveLine(gameToRemove);
+                        SessionHelper.GetCart(Session).RemoveLine(storeItemToRemove);
                     }
                 }
             }
