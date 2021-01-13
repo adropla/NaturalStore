@@ -2,11 +2,9 @@
     MasterPageFile="~/Pages/Store.Master" %>
 <%@ Import Namespace="System.Web.Routing" %>
 
-<asp:Content ContentPlaceHolderID="bodyContent" runat="server">
-    <div id="content">
-        <asp:Repeater ItemType="Natural_Store.Models.StoreItem"
-            SelectMethod="GetStoreItems" runat="server">
-            <ItemTemplate>
+<asp:Repeater ID="Repeater1" ItemType="GameStore.Models.CartLine"
+      SelectMethod="GetCartLines" runat="server" EnableViewState="false">
+      <ItemTemplate>
                 <div class="item">
                     <h3><%# Item.Name %></h3>
                     <%# Item.Description %>
@@ -15,8 +13,8 @@
                         Добавить в корзину
                     </button>
                 </div>
-            </ItemTemplate>
-        </asp:Repeater>
+    </ItemTemplate>
+</asp:Repeater>
     </div>
     <div class="pager">
         <%
