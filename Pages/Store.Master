@@ -1,12 +1,11 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" Inherits="Natural_Store.Pages.Store" %>
-<%@ Register TagPrefix="GS" TagName="CategoryLinks" Src="~/Controls/CategoryList.ascx" %>
-<%@ Register TagPrefix="GS" TagName="CartSummary" Src="~/Controls/CartSummary.ascx" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" 
+   Inherits="Natural_Store.Pages.Store" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Natural_Store</title>
+    <title>GameStore</title>
     <link rel="stylesheet" href="/Content/Styles.css" />
 </head>
 <body>
