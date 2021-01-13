@@ -1,11 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Listing.aspx.cs" Inherits="Natural_Store.Pages.Listing"
     MasterPageFile="~/Pages/Store.Master" %>
+<%@ Import Namespace="System.Web.Routing" %>
 
 <asp:Content ContentPlaceHolderID="bodyContent" runat="server">
     <div id="content">
         <%
-            Response.Write(
-                "<span>123123</span>");
             foreach (Natural_Store.Models.StoreItem storeItem in GetStoreItems())
             {
                 Response.Write(String.Format(@"
@@ -22,9 +21,11 @@
         <%
             for (int i = 1; i <= MaxPage; i++)
             {
+                string path = RouteTable.Routes.GetVirtualPath(null, null,
+                    new RouteValueDictionary() { { "page", i } }).VirtualPath;
                 Response.Write(
-                    String.Format("<a href='/Pages/Listing.aspx?page={0}' {1}>{2}</a>",
-                        i, i == CurrentPage ? "class='selected'" : "", i));
+                    String.Format("<a href='{0}' {1}>{2}</a>",
+                        path, i == CurrentPage ? "class='selected'" : "", i));
             }
         %>
     </div>
