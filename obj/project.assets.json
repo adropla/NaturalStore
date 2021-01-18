@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\Natural_Store\\NaturalStore.csproj",
+      "projectUniqueName": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj",
       "projectName": "NaturalStore",
-      "projectPath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\Natural_Store\\NaturalStore.csproj",
+      "projectPath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj",
       "packagesPath": "C:\\Users\\adropla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\Natural_Store\\obj\\",
+      "outputPath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
