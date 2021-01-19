@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Natural_Store.Domain;
+using NaturalStore.Domain;
 
-namespace Natural_Store.Areas.Admin.Controllers
+namespace NaturalStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class HomeController : Controller

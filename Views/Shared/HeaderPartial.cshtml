@@ -1,44 +1,18 @@
 ﻿<div id="header-wrapper">
-    <header id="header" class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
 
-        <!-- Logo -->
-        <div id="logo">
-            <h1><a href="index.html">Verti</a></h1>
-            <span>by HTML5 UP</span>
+                <header id="header">
+                    <h1><a href="/" id="logo">@Config.CompanyName</a></h1>
+                    <nav id="nav">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="">Каталог товаров</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Contacts">Контакты</a>
+                    </nav>
+                </header>
+
+            </div>
         </div>
-
-        <!-- Nav -->
-        <h1><a href="/" id = "logo">@Config.CompanyName</a><h1>
-        <nav id="nav">
-            <a asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
-            <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="">Наши услуги</a>
-            <a asp-area="" asp-controller="Home" asp-action="Contacts">Контакты</a>
-            
-            
-            <ul>
-                <li><a href="index.html">Welcome</a></li>
-                <li>
-                    <a href="#">Dropdown</a>
-                    <ul>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                        <li><a href="#">Magna phasellus</a></li>
-                        <li>
-                            <a href="#">Phasellus consequat</a>
-                            <ul>
-                                <li><a href="#">Lorem ipsum dolor</a></li>
-                                <li><a href="#">Phasellus consequat</a></li>
-                                <li><a href="#">Magna phasellus</a></li>
-                                <li><a href="#">Etiam dolore nisl</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Veroeros feugiat</a></li>
-                    </ul>
-                </li>
-                <li class="current"><a href="left-sidebar.html">Left Sidebar</a></li>
-                <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                <li><a href="no-sidebar.html">No Sidebar</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    </div>
 </div>

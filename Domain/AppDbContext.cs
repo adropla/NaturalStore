@@ -52,7 +52,7 @@ namespace NaturalStore.Domain
             {
                 Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                 CodeWord = "PageServices",
-                Title = "Наши услуги"
+                Title = "Каталог товаров"
             });
             modelBuilder.Entity<TextField>().HasData(new TextField
             {

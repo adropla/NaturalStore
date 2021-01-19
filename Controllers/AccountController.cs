@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Natural_Store.Models;
+using NaturalStore.Models;
 
-namespace Natural_Store.Controllers
+namespace NaturalStore.Controllers
 {
     [Authorize]
     public class AccountController : Controller

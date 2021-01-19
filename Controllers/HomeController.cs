@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NaturalStore.Domain;
 
 namespace NaturalStore.Controllers
 {
@@ -17,12 +18,12 @@ namespace NaturalStore.Controllers
         
         public IActionResult Index()
         {
-            return View(dataManager.TextFields.GetTextFieldsByCodeWord("PageIndex"));
+            return View(dataManager.TextFields.GetTextFieldByCodeWord("PageIndex"));
         }
         
         public IActionResult Contacts()
         {
-            return View(dataManager.TextFields.GetTextFieldsByCodeWord("PageContacts"));
+            return View(dataManager.TextFields.GetTextFieldByCodeWord("PageContacts"));
         }
     }
 }
