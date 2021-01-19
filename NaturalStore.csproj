@@ -7,15 +7,14 @@
   <ItemGroup>
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
-    <Content Remove="Views\Shared\CssPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Domain\" />
+    <Folder Include="Domain\Repositories\Abstract\" />
+    <Folder Include="Domain\Repositories\EntityFramework\" />
     <Folder Include="Models\ViewComponents\" />
-    <Folder Include="Service\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\sass\" />
@@ -24,7 +23,6 @@
   <ItemGroup>
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
-    <None Include="Views\Shared\CssPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

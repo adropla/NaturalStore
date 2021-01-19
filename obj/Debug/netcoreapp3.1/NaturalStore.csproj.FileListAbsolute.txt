@@ -1,4 +1,3 @@
-C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\NaturalStore.exe
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\NaturalStore.deps.json
@@ -147,3 +146,6 @@ C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CssPartial.cshtml.g.cs
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\appsettings.production.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\appsettings.staging.json
