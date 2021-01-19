@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using MyCompany.Models;
+using Natural_Store.Models;
 
 namespace Natural_Store.Controllers
 {
