@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jPlpxXtq7D+UPzGhEfrhFwZOohZRqOm1lAhULlHRJCNn9rwC53eGkhUBC1Befcx5X9ryiysZremLG2MGbXOVqg==",
+  "dgSpecHash": "fAqhsPdUJNykTTgzs7+6Gmq0AOeeMVfWdNncvjPYMAi9FxoZBU8unCA5oWjxcDSC12tA8hT7mRZVXwcdhPQgbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\adropla\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.1\\microsoft.entityframeworkcore.design.3.1.1.nupkg.sha512",
     "C:\\Users\\adropla\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.1\\microsoft.entityframeworkcore.relational.3.1.1.nupkg.sha512",
     "C:\\Users\\adropla\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.1\\microsoft.entityframeworkcore.sqlserver.3.1.1.nupkg.sha512",
+    "C:\\Users\\adropla\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.0\\microsoft.entityframeworkcore.tools.3.1.0.nupkg.sha512",
     "C:\\Users\\adropla\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.1\\microsoft.extensions.caching.abstractions.3.1.1.nupkg.sha512",
     "C:\\Users\\adropla\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.1\\microsoft.extensions.caching.memory.3.1.1.nupkg.sha512",
     "C:\\Users\\adropla\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.1\\microsoft.extensions.configuration.3.1.1.nupkg.sha512",

@@ -149,3 +149,17 @@ C:\Users\adropla\source\repos\Natural-Store\NaturalStore\obj\Debug\netcoreapp3.1
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CssPartial.cshtml.g.cs
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\appsettings.production.json
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\appsettings.staging.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\web.config
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\appsettings.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\appsettings.production.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\appsettings.staging.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\NaturalStore.deps.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\NaturalStore.runtimeconfig.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\wwwroot\js\ckeditor\samples\toolbarconfigurator\font\config.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\web.config
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\appsettings.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\appsettings.production.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\appsettings.staging.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\NaturalStore.deps.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\NaturalStore.runtimeconfig.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\out\wwwroot\js\ckeditor\samples\toolbarconfigurator\font\config.json
