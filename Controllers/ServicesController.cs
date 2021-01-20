@@ -23,10 +23,14 @@ namespace NaturalStore.Controllers
             return View("Show", dataManager.ServiceItems.GetServiceItemById(id));
             }
         
-        ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageServices");
-        return View(dataManager.ServiceItems.GetServiceItems());
-        
-       
+            ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageServices");
+            return View(dataManager.ServiceItems.GetServiceItems());
+        }
+
+        public IActionResult Category(string category)
+        {
+            ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageServices");
+            return View("Index", dataManager.ServiceItems.GetSI(category));
         }
     }
 }

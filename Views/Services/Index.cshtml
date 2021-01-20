@@ -18,12 +18,14 @@
             <li>
                 <!-- Box -->
                 <section class="box feature" style="max-height: 80%;width: 100%;display: flex;padding: 1em;overflow: hidden;">
-                    <a href="#" class="image featured" style="max-height: 100%;"><img src="~/images/@entity.TitleImagePath" alt="" class="left" style="max-height: 100%;" /></a>
+                    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id" class="image featured" style="max-height: 100%;"><img src="~/images/@entity.TitleImagePath" alt="" class="left" style="max-height: 100%;" /></a>
                     <div class="inner" style="padding: 0em 1em 3em 1em;">
                         <header style="margin: 0;">
                             <h2>@entity.Title</h2>
+                            <h3>@entity.Category</h3>
                         </header>
                         <p>@entity.Subtitle</p>
+                        <h4>@entity.Price.ToString("# руб.")</h4>
                     </div>
                 </section>
             </li>

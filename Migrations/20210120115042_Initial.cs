@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NaturalStore.Migrations
 {
-    public partial class firstMigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -58,7 +58,9 @@ namespace NaturalStore.Migrations
                     DateAdded = table.Column<DateTime>(nullable: false),
                     Title = table.Column<string>(nullable: false),
                     Subtitle = table.Column<string>(nullable: true),
-                    Text = table.Column<string>(nullable: true)
+                    Text = table.Column<string>(nullable: true),
+                    Category = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -194,21 +196,21 @@ namespace NaturalStore.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "44546e06-8719-4ad8-b88a-f271ae9d6eab", "b96a43b1-bc76-44cb-83c5-0c512afeff67", "admin", "ADMIN" });
+                values: new object[] { "44546e06-8719-4ad8-b88a-f271ae9d6eab", "e21e89fc-ac90-4b87-8675-e5363134f712", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "3b62472e-4f66-49fa-a20f-e7685b9565d8", 0, "1f88e416-e498-4ea6-859d-1271f564851d", "my@email.com", true, false, null, "MY@EMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEAgEo/zj4VllCDFJKdok98rJ4Lm2wFEvhRW7KYWOlE3h+pMoWOP6p/VhXHI+sY/pNA==", null, false, "", false, "admin" });
+                values: new object[] { "3b62472e-4f66-49fa-a20f-e7685b9565d8", 0, "8c8ff381-b37f-422e-b390-cd49f7cfeea8", "my@email.com", true, false, null, "MY@EMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEBXHxjrUZaIY4+1o8Ris9RPBmw6TYk63XKjvg7EDMpyJ2oLsk3fxI/8X59n7buItfg==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "TextFields",
                 columns: new[] { "Id", "CodeWord", "DateAdded", "MetaDescription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title", "TitleImagePath" },
                 values: new object[,]
                 {
-                    { new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"), "PageIndex", new DateTime(2021, 1, 19, 16, 56, 0, 792, DateTimeKind.Utc).AddTicks(6310), null, null, null, null, "Содержание заполняется администратором", "Главная", null },
-                    { new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"), "PageServices", new DateTime(2021, 1, 19, 16, 56, 0, 793, DateTimeKind.Utc).AddTicks(1412), null, null, null, null, "Содержание заполняется администратором", "Наши услуги", null },
-                    { new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"), "PageContacts", new DateTime(2021, 1, 19, 16, 56, 0, 793, DateTimeKind.Utc).AddTicks(1665), null, null, null, null, "Содержание заполняется администратором", "Контакты", null }
+                    { new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"), "PageIndex", new DateTime(2021, 1, 20, 11, 50, 41, 455, DateTimeKind.Utc).AddTicks(2858), null, null, null, null, "Содержание заполняется администратором", "Главная", null },
+                    { new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"), "PageServices", new DateTime(2021, 1, 20, 11, 50, 41, 455, DateTimeKind.Utc).AddTicks(7516), null, null, null, null, "Содержание заполняется администратором", "Каталог товаров", null },
+                    { new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"), "PageContacts", new DateTime(2021, 1, 20, 11, 50, 41, 455, DateTimeKind.Utc).AddTicks(7609), null, null, null, null, "Содержание заполняется администратором", "Контакты", null }
                 });
 
             migrationBuilder.InsertData(

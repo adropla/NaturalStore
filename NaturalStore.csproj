@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210119165601_firstMigration.cs" />
+    <Compile Remove="Migrations\20210119165601_firstMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210120105415_dbupd.cs" />
+    <Compile Remove="Migrations\20210120105415_dbupd.Designer.cs" />
+    <Compile Remove="Migrations\20210120111039_addPriceCategory.cs" />
+    <Compile Remove="Migrations\20210120111039_addPriceCategory.Designer.cs" />
+    <Compile Remove="Migrations\20210120114414_InitialMigration.cs" />
+    <Compile Remove="Migrations\20210120114414_InitialMigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
@@ -12,8 +23,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Domain\Repositories\Abstract\" />
-    <Folder Include="Domain\Repositories\EntityFramework\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\sass\" />

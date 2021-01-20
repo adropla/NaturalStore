@@ -49,7 +49,7 @@ namespace NaturalStore.Migrations
                         new
                         {
                             Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
-                            ConcurrencyStamp = "e7c36654-9a22-4575-8082-fd08e62b876e",
+                            ConcurrencyStamp = "e21e89fc-ac90-4b87-8675-e5363134f712",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -148,13 +148,13 @@ namespace NaturalStore.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ca316bde-e32a-46a1-aa75-41e69ea331dc",
+                            ConcurrencyStamp = "8c8ff381-b37f-422e-b390-cd49f7cfeea8",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFMHOwTHb/lquunG/QSkY/JHMQb/TOl1FN3+nLs53T1EGtYDptIiM1CoKq13emKYUg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBXHxjrUZaIY4+1o8Ris9RPBmw6TYk63XKjvg7EDMpyJ2oLsk3fxI/8X59n7buItfg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -255,6 +255,9 @@ namespace NaturalStore.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Category")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
 
@@ -266,6 +269,9 @@ namespace NaturalStore.Migrations
 
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Subtitle")
                         .HasColumnType("nvarchar(max)");
@@ -328,7 +334,7 @@ namespace NaturalStore.Migrations
                         {
                             Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2021, 1, 19, 17, 0, 52, 808, DateTimeKind.Utc).AddTicks(958),
+                            DateAdded = new DateTime(2021, 1, 20, 11, 50, 41, 455, DateTimeKind.Utc).AddTicks(2858),
                             Text = "Содержание заполняется администратором",
                             Title = "Главная"
                         },
@@ -336,15 +342,15 @@ namespace NaturalStore.Migrations
                         {
                             Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                             CodeWord = "PageServices",
-                            DateAdded = new DateTime(2021, 1, 19, 17, 0, 52, 808, DateTimeKind.Utc).AddTicks(5709),
+                            DateAdded = new DateTime(2021, 1, 20, 11, 50, 41, 455, DateTimeKind.Utc).AddTicks(7516),
                             Text = "Содержание заполняется администратором",
-                            Title = "Наши услуги"
+                            Title = "Каталог товаров"
                         },
                         new
                         {
                             Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2021, 1, 19, 17, 0, 52, 808, DateTimeKind.Utc).AddTicks(5838),
+                            DateAdded = new DateTime(2021, 1, 20, 11, 50, 41, 455, DateTimeKind.Utc).AddTicks(7609),
                             Text = "Содержание заполняется администратором",
                             Title = "Контакты"
                         });

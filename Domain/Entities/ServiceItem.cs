@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NaturalStore.Domain.Entities
 {
@@ -13,5 +14,12 @@ namespace NaturalStore.Domain.Entities
 
         [Display(Name = "Полное описание товара")]
         public override string Text { get; set; }
+
+        [Display(Name = "Категория")]
+        public string Category { get; set; }
+
+        [Display(Name = "Цена")]
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Price { get; set; }
     }
 }

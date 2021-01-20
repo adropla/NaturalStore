@@ -1,21 +1,15 @@
-﻿@model IQueryable<ServiceItem>
+﻿@model IEnumerable<string>
 
-@if (Model?.Any() == true)
+@if (Model.Any())
 {
     <section>
-        <ul class="small-image-list">
-            @foreach (ServiceItem entity in Model)
+        <ul class="small-image-list" style="list-style-type: none;">
+            @foreach (string entity in Model)
             {
                 <li>
-                    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
-                        <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+                    <a asp-area="" asp-controller="Services" asp-action="Category" asp-route-category="@entity.ToString()">
+                        @entity
                     </a>
-                    <h4>
-                        @entity.Title
-                    </h4>
-                    <p>
-                        @entity.Subtitle
-                    </p>
                 </li>
             }
         </ul>
