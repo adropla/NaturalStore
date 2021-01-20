@@ -8,19 +8,27 @@
 }
 
 <div>
+    <h2>Наши товары</h2>
     @if (Model.Any())
     {
-        <ul class="big-image-list">
-            @foreach (ServiceItem entity in Model)
-            {
-                <li>
-                    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
-                        <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
-                    </a>
-                    <h4>@entity.Title</h4>
-                    <p>@entity.Subtitle</p>
-                </li>
-            }
-        </ul>
+    <ul class="big-image-list" style="margin-top: 15px; list-style-type: none;">
+        @foreach (ServiceItem entity in Model)
+        {            
+        <div class="row">
+            <li>
+                <!-- Box -->
+                <section class="box feature" style="max-height: 80%;width: 100%;display: flex;padding: 1em;overflow: hidden;">
+                    <a href="#" class="image featured" style="max-height: 100%;"><img src="~/images/@entity.TitleImagePath" alt="" class="left" style="max-height: 100%;" /></a>
+                    <div class="inner" style="padding: 0em 1em 3em 1em;">
+                        <header style="margin: 0;">
+                            <h2>@entity.Title</h2>
+                        </header>
+                        <p>@entity.Subtitle</p>
+                    </div>
+                </section>
+            </li>
+        </div>            
+        }
+    </ul>
     }
 </div>

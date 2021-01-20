@@ -1,18 +1,18 @@
 ﻿<div id="header-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-
-                <header id="header">
-                    <h1><a href="/" id="logo">@Config.CompanyName</a></h1>
-                    <nav id="nav">
-                        <a asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
-                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="">Каталог товаров</a>
-                        <a asp-area="" asp-controller="Home" asp-action="Contacts">Контакты</a>
-                    </nav>
-                </header>
-
-            </div>
+    <header id="header" class="container">
+        <div id="logo">
+            <h1><a href="/">@Config.CompanyName</a></h1>
+            <span></span>
         </div>
-    </div>
+        <nav id="nav">
+            <ul>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                <li><a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="">Каталог товаров</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+            </ul>
+
+
+
+        </nav>
+    </header>
 </div>

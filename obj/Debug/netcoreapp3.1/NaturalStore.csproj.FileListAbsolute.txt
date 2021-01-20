@@ -166,3 +166,4 @@ C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\NaturalStore.deps.json
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\NaturalStore.runtimeconfig.json
 C:\Users\adropla\source\repos\Natural-Store\NaturalStore\bin\Debug\netcoreapp3.1\out\wwwroot\js\ckeditor\samples\toolbarconfigurator\font\config.json
+C:\Users\adropla\source\repos\Natural-Store\NaturalStore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ViewImports.cshtml.g.cs

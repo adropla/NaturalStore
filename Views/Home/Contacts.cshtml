@@ -7,4 +7,32 @@
 
 <div>
     @Html.Raw(Model.Text)
+    <form class="ckeditor" method="post" action="" id="editor1">
+        <div class="wa-field">
+            <div class="wa-name">Имя:</div>
+            <div class="wa-value"><input name="name" type="text" value=""></div>
+        </div>
+        <div class="wa-field">
+            <div class="wa-name">Email:</div>
+            <div class="wa-value">
+                <input name="email" type="email" value="">
+            </div>
+        </div>
+        <div class="wa-field">
+            <div class="wa-name">Сообщение:</div>
+            <div class="wa-value">
+                <input type="hidden" name="subject" value="Запрос с сайта">
+                <textarea name="body" style="margin: 0px; max-width: 100%; height: 77px;"></textarea>
+            </div>
+        </div>
+
+        <div class="wa-field" style="margin-top:15px;">
+            <div class="wa-value wa-submit">
+                <input type="submit" value="Отправить" name="send">
+            </div>
+        </div>
+    </form>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
 </div>

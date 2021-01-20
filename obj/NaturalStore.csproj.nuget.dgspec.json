@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antho\\Source\\Repos\\NaturalStore\\NaturalStore.csproj": {}
+    "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antho\\Source\\Repos\\NaturalStore\\NaturalStore.csproj": {
+    "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antho\\Source\\Repos\\NaturalStore\\NaturalStore.csproj",
+        "projectUniqueName": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj",
         "projectName": "NaturalStore",
-        "projectPath": "C:\\Users\\antho\\Source\\Repos\\NaturalStore\\NaturalStore.csproj",
-        "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antho\\Source\\Repos\\NaturalStore\\obj\\",
+        "projectPath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\NaturalStore.csproj",
+        "packagesPath": "C:\\Users\\adropla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adropla\\source\\repos\\Natural-Store\\NaturalStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\antho\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\adropla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
