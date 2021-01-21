@@ -8,7 +8,7 @@
 }
 
 <div>
-    <h2>Наши товары</h2>
+    <h2 style="padding-left: 1.3em;">Наши товары</h2>
     @if (Model.Any())
     {
     <ul class="big-image-list" style="margin-top: 15px; list-style-type: none;">
@@ -17,20 +17,23 @@
         <div class="row">
             <li>
                 <!-- Box -->
-                <section class="box feature" style="max-height: 80%;width: 100%;display: flex;padding: 1em;overflow: hidden;">
-                    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id" class="image featured" style="max-height: 100%;"><img src="~/images/@entity.TitleImagePath" alt="" class="left" style="max-height: 100%;" /></a>
-                    <div class="inner" style="padding: 0em 1em 3em 1em;">
+                <section class="box feature" style="max-height: 80%;width: 100%;display: flex;padding: 2em;overflow: hidden;">
+                    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id" class="image featured" style="max-height: 100%; width: 30%;"><img src="~/images/@entity.TitleImagePath" alt="" class="left" style="max-height: 100%;" /></a>
+                    <div class="inner" style="padding: 0em 1em 3em 1em; width: 70%;">
                         <header style="margin: 0;">
                             <h2>@entity.Title</h2>
-                            <h4>@entity.Category</h4>
+                            <h6>@entity.Category</h6>
                         </header>
                         <p>@entity.Subtitle</p>
-                        <h4>@entity.Price.ToString("# руб.")</h4>
+                        <div style="display: flex;justify-content: space-between;">
+                            <h4 style="text-decoration: underline;">@entity.Price.ToString("# руб.")</h4>
+                            <div class="pull-right">
+                                <a asp-controller="ShopCart" asp-action="addToCart" asp-route-Id="@entity.Id" type="submit" class="btn btn-success" value="Добавить в корзину">Добавить в корзину</a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="pull-right">
-                        <a asp-controller="ShopCart"  asp-action="addToCart" asp-route-Id="@entity.Id" type="submit" class="btn btn-success" value="Добавить в корзину"></a>
-                    </div>
+                    
                 </section>
             </li>
         </div>            

@@ -7,9 +7,11 @@
             @foreach (string entity in Model)
             {
                 <li>
-                    <a asp-area="" asp-controller="Services" asp-action="Category" asp-route-category="@entity.ToString()">
-                        @entity
-                    </a>
+                    <h5>
+                        <a asp-area="" asp-controller="Services" asp-action="Category" asp-route-category="@entity.ToString()">
+                            @entity
+                        </a>
+                    </h5>
                 </li>
             }
         </ul>

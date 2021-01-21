@@ -4,18 +4,23 @@
     ViewBag.Description = Model.MetaDescription;
     ViewBag.Keywords = Model.MetaKeywords;
 }
+<div style="background-color: wheat; padding: 1em;">
 
-<div>
     <h2>
         @Model.Title
     </h2>
-    <h2>
-        @Model.Subtitle
-    </h2>
-    <div>
-        <img class="img-block" src="~/images/@Model.TitleImagePath" />
+    <div style="display: flex;">
+        <div style="padding-right: 1em;">
+            <img class="img-block" src="~/images/@Model.TitleImagePath" />
+        </div>
+
+        <h5>
+            @Model.Subtitle
+        </h5>
+
     </div>
-</div>
-<div>
-    @Html.Raw(Model.Text)
+    <div>
+        @Html.Raw(Model.Text)
+    </div>
+
 </div>
