@@ -13,6 +13,8 @@ namespace NaturalStore.Domain
         public DbSet<TextField> TextFields { get; set; }
         public DbSet<ServiceItem> ServiceItems { get; set; }
 
+        public DbSet<CartLine> CartLines { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

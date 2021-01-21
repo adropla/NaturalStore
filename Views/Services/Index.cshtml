@@ -22,11 +22,19 @@
                     <div class="inner" style="padding: 0em 1em 3em 1em;">
                         <header style="margin: 0;">
                             <h2>@entity.Title</h2>
-                            <h3>@entity.Category</h3>
+                            <h4>@entity.Category</h4>
                         </header>
                         <p>@entity.Subtitle</p>
                         <h4>@entity.Price.ToString("# руб.")</h4>
                     </div>
+                    @using (Html.BeginForm("Index", "ShopCart"))
+                    {
+                        <div class="pull-right">
+                            @Html.HiddenFor(ServiceItem => entity.Id)
+                            @*@Html.Hidden("returnUrl", Request.Url.PathAndQuery)*@
+                            <input type="submit" class="btn btn-success" value="Добавить в корзину" />
+                        </div>
+                    }
                 </section>
             </li>
         </div>            

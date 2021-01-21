@@ -7,7 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NaturalStore.Controllers;
 using NaturalStore.Domain;
+using NaturalStore.Domain.Entities;
 using NaturalStore.Domain.Repositories.Abstract;
 using NaturalStore.Domain.Repositories.EntityFramework;
 using NaturalStore.Service;
@@ -67,6 +69,14 @@ namespace Natural_Store
                 })
                 //выставляем совместимость с asp.net core 3.0
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ShopCart.GetCart(sp)); 
+            
+            services.AddMvc();
+
+            services.AddMemoryCache();
+            services.AddSession();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -78,6 +88,9 @@ namespace Natural_Store
 
             //подключаем поддержку статичных файлов в приложении (css, js и т.д.)
             app.UseStaticFiles();
+
+            //сессии
+            app.UseSession();
 
             //подключаем систему маршрутизации
             app.UseRouting();
