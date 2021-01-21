@@ -33,6 +33,7 @@ namespace Natural_Store
             services.AddTransient<ITextFieldsRepository, EFTextFieldsRepository>();
             services.AddTransient<IServiceItemsRepository, EFServiceItemsRepository>();
             services.AddTransient<DataManager>();
+            services.AddTransient<IOrders, OrdersRepository>();
 
             //подключаем контекст БД
             services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Config.ConnectionString));

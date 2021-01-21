@@ -7,10 +7,13 @@ namespace NaturalStore.Domain
         public ITextFieldsRepository TextFields { get; set; }
         public IServiceItemsRepository ServiceItems { get; set; }
 
-        public DataManager(ITextFieldsRepository textFieldsRepository, IServiceItemsRepository serviceItemsRepository)
+        public IOrders Orders { get; set; }
+
+        public DataManager(ITextFieldsRepository textFieldsRepository, IServiceItemsRepository serviceItemsRepository, IOrders orders)
         {
             TextFields = textFieldsRepository;
             ServiceItems = serviceItemsRepository;
+            Orders = orders;
         }
     }
 }

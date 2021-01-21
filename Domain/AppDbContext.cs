@@ -14,6 +14,8 @@ namespace NaturalStore.Domain
         public DbSet<ServiceItem> ServiceItems { get; set; }
 
         public DbSet<CartLine> CartLines { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderDetail> OrderDetail { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

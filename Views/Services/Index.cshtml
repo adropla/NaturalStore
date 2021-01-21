@@ -27,14 +27,10 @@
                         <p>@entity.Subtitle</p>
                         <h4>@entity.Price.ToString("# руб.")</h4>
                     </div>
-                    @using (Html.BeginForm("Index", "ShopCart"))
-                    {
-                        <div class="pull-right">
-                            @Html.HiddenFor(ServiceItem => entity.Id)
-                            @*@Html.Hidden("returnUrl", Request.Url.PathAndQuery)*@
-                            <input type="submit" class="btn btn-success" value="Добавить в корзину" />
-                        </div>
-                    }
+
+                    <div class="pull-right">
+                        <a asp-controller="ShopCart"  asp-action="addToCart" asp-route-Id="@entity.Id" type="submit" class="btn btn-success" value="Добавить в корзину"></a>
+                    </div>
                 </section>
             </li>
         </div>            
